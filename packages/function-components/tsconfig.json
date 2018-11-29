@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "ES2015",
+    "allowJs": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "outDir": "./dist/",
+  },
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}
