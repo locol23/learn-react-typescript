@@ -23,8 +23,8 @@ Learn React with TypeScript
 ## Getting Started
 
 ```bash
-git clone --depth=1 https://github.com/locol23/react-hooks-boilerplate.git
-cd react-hooks-boilerplate
+git clone --depth=1 https://github.com/locol23/learn-react-ts.git
+cd learn-react-ts
 yarn
 yarn bootstrap
 cd packages/<your_select_dir>
