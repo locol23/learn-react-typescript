@@ -6,7 +6,7 @@ Learn React with TypeScript
 
 # Attention
 - React Hooks is not production ready now(2018/11/30)
-- If you use React lifecycle in production services, you shold use recompose.
+- From the above reason, if you use React lifecycle in production services, you shold use recompose.
 
 # Agenda
 - Function Components
