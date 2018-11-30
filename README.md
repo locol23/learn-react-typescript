@@ -6,6 +6,8 @@ Learn React with TypeScript
 
 # Agenda
 - Function Components
+  - [Base](https://github.com/locol23/learn-react-ts/tree/master/packages/function-components-base)
+  - [Goal](https://github.com/locol23/learn-react-ts/tree/master/packages/function-components-goal)
 - Styled Components
 - Recompose
   - State(withStateHandlers)
