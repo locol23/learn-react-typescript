@@ -1,0 +1,19 @@
+{
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "defaultSeverity": "error",
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "rules": {
+    "interface-name": false,
+    "no-empty-interface": false,
+    "object-literal-sort-keys" : false,
+    "prettier": [
+      true, {
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "bracketSpacing": true,
+        "trailingComma": "es5"
+      }
+    ]
+  }
+}
