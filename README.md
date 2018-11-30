@@ -1,4 +1,4 @@
-# react-hooks-boileaplate
+# Learn React
 
 Learn React with TypeScript
 
