@@ -4,6 +4,10 @@ Learn React with TypeScript
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
+# Attention
+- React Hooks is not production ready now(2018/11/30)
+- If you use React lifecycle in production services, you shold use recompose.
+
 # Agenda
 - Function Components
   - [Base](https://github.com/locol23/learn-react-ts/tree/master/packages/function-components-base)
