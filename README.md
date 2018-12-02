@@ -5,21 +5,22 @@ Learn React with TypeScript
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 # Attention
-- React Hooks is not production ready now(2018/11/30)
-- From the above reason, if you use React lifecycle in production services, you shold use recompose.
+- React Hooks is not production ready now(2018/11/30).
+- From the above reason, if you use React lifecycle in production services, you shold use Recompose.
 
 # Agenda
 - Function Components
   - [Base](https://github.com/locol23/learn-react-ts/tree/master/packages/function-components-base)
   - [Goal](https://github.com/locol23/learn-react-ts/tree/master/packages/function-components-goal)
 - Styled Components
+    - [Base & Goal](https://github.com/locol23/learn-react-ts/tree/master/packages/styled-components)
 - Recompose
   - State(withStateHandlers)
-  - lifecycle
 - React Hooks
   - State(useState)
+    - [Base](https://github.com/locol23/learn-react-ts/tree/master/packages/hooks-state-base)
+    - [Goal](https://github.com/locol23/learn-react-ts/tree/master/packages/hooks-state-goal)
   - State(useReducer)
-  - lifecycle(useEffect)
 
 ## Prerequisites
 
