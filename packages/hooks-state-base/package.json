@@ -1,5 +1,5 @@
 {
-  "name": "hooks-state",
+  "name": "hooks-state-base",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/locol23/learn-react-ts.git",
