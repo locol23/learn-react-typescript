@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 interface Props {
@@ -9,7 +9,7 @@ const Layout = (props: Props) => <Container>{props.children}</Container>
 
 export const App = () => (
   <Layout>
-    <div>Function Components</div>
+    <h1>Function Components</h1>
   </Layout>
 )
 
