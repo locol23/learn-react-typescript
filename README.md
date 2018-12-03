@@ -13,7 +13,7 @@ Learn React with TypeScript
   - [Base](https://github.com/locol23/learn-react-ts/tree/master/packages/function-components-base)
   - [Goal](https://github.com/locol23/learn-react-ts/tree/master/packages/function-components-goal)
 - Styled Components
-    - [Base & Goal](https://github.com/locol23/learn-react-ts/tree/master/packages/styled-components)
+    - [Base](https://github.com/locol23/learn-react-ts/tree/master/packages/styled-components-base)
 - Recompose
   - State(withStateHandlers)
 - React Hooks
