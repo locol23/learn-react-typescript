@@ -8,7 +8,7 @@ Learn React with TypeScript
 - React Hooks is not production ready now(2018/11/30).
 - From the above reason, if you use React lifecycle in production services, you shold use Recompose.
 
-# Agenda
+# Table of Contents
 - Function Components
   - [Base](https://github.com/locol23/learn-react-ts/tree/master/packages/function-components-base)
   - [Goal](https://github.com/locol23/learn-react-ts/tree/master/packages/function-components-goal)
