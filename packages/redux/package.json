@@ -1,0 +1,46 @@
+{
+  "name": "hooks-state-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/locol23/learn-react-ts.git",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "parcel": "parcel src/index.html",
+    "lint": "tslint src/**/*.ts{,x}",
+    "lint-watch": "chokidar src/*.ts{x} src/**/*.ts{,x} -c 'npm run lint'",
+    "dev": "run-s clean lint && run-p lint-watch parcel",
+    "build": "run-s clean lint && parcel build src/index.html"
+  },
+  "dependencies": {
+    "react": "16.7.0-alpha.0",
+    "react-dom": "16.7.0-alpha.0",
+    "react-redux": "^5.1.1",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.1",
+    "styled-components": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.7.8",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-redux": "^6.0.10",
+    "@types/recompose": "0.27.0",
+    "@types/redux": "^3.6.0",
+    "@types/styled-components": "^4.1.2",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "chokidar-cli": "1.2.1",
+    "json5": "^2.1.0",
+    "npm-run-all": "4.1.3",
+    "parcel-bundler": "^1.10.3",
+    "prettier": "1.15.2",
+    "rimraf": "2.6.2",
+    "tslint": "5.11.0",
+    "tslint-config-prettier": "1.16.0",
+    "tslint-plugin-prettier": "2.0.1",
+    "typescript": "3.1.6"
+  }
+}
