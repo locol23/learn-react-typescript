@@ -50,7 +50,7 @@ Go to [http://localhost:1234](http://localhost:1234)
 - [Recompose](https://github.com/acdlite/recompose)
 - [Parcel](https://parceljs.org/)
 - [Prittier](https://prettier.io/)
-- [ESLint](https://eslint.org/)
+- [TSLint](https://palantir.github.io/tslint/)
 - [Lerna](https://lernajs.io/)
 
 ## LICENSE
