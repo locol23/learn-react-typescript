@@ -1,5 +1,3 @@
-import { Dispatch } from 'redux'
-
 const INCREMENT = 'counter/increment'
 const DECREMENT = 'counter/decrement'
 const RESET = 'counter/reset'
