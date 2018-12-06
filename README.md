@@ -22,6 +22,8 @@ Learn React with TypeScript
     - [Base](https://github.com/locol23/learn-react-ts/tree/master/packages/hooks-state-base)
     - [Goal](https://github.com/locol23/learn-react-ts/tree/master/packages/hooks-state-goal)
   - State(useReducer)
+- React + Redux
+  - [Base](https://github.com/locol23/learn-react-ts/tree/master/packages/redux-base)
 
 ## Prerequisites
 
