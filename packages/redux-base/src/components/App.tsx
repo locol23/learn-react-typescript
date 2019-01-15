@@ -62,6 +62,11 @@ const Component = (props: Props) => {
     </React.Fragment>
   )
 }
+const Layout = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+`
 
 // Container
 const mapStateToProps = (state: CounterState) => state
@@ -80,9 +85,3 @@ export const App = () => (
     <AppComponent />
   </Provider>
 )
-
-const Layout = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-`
