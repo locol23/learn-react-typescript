@@ -7,7 +7,6 @@
     "no-empty-interface": false,
     "object-literal-sort-keys" : false,
     "no-submodule-imports": false,
-    "allowSyntheticDefaultImports": true,
     "prettier": [
       true, {
         "semi": false,
