@@ -11,6 +11,7 @@
     "noImplicitThis": true,
     "alwaysStrict": true,
     "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "strictPropertyInitialization": true,
     "rootDir": "src",
     "outDir": "./dist/",
