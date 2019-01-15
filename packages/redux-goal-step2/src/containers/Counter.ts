@@ -1,9 +1,10 @@
 import { connect } from 'react-redux'
 import { Dispatch } from 'redux'
-import { decrement, increment, reset, RootState } from '../../../reducer'
-import { Counter as CounterContent } from './Counter'
+import { Counter as CounterComponent } from '../components/organisms/Counter'
+import { RootState } from '../reducers'
+import { decrement, increment, reset } from '../reducers/counter'
 
-const mapStateToProps = (state: RootState) => ({ ...state.counter })
+const mapStateToProps = (state: RootState) => ({ counter: state.counter })
 const mapDispatchToProps = (dispatch: Dispatch) => ({
   increment: () => dispatch(increment()),
   decrement: () => dispatch(decrement()),
@@ -13,4 +14,4 @@ const mapDispatchToProps = (dispatch: Dispatch) => ({
 export const Counter = connect(
   mapStateToProps,
   mapDispatchToProps
-)(CounterContent)
+)(CounterComponent)

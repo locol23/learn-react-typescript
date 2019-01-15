@@ -1,17 +1,17 @@
 import React from 'react'
-import { CounterAction, CounterState, reset } from '../../../reducer'
-import { Layout } from '../../utils/Layout'
+import { Action, CounterState } from '../../reducers/counter'
+import { Layout } from '../utils/Layout'
 
 type Props = CounterState & {
-  increment: () => CounterAction
-  decrement: () => CounterAction
-  reset: (num: number) => CounterAction
+  increment: () => Action
+  decrement: () => Action
+  reset: (num: number) => Action
 }
 
 export const Counter = (props: Props) => (
   <div>
     <Layout>
-      <h1>{props.count}</h1>
+      <h1>{props.counter.count}</h1>
     </Layout>
     <Layout>
       <button onClick={props.increment}>increment</button>
