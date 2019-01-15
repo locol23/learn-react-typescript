@@ -1,8 +1,6 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import { Dispatch } from 'redux'
-import { Action, CounterState, decrement, increment, reset } from '../reducer'
-import { Layout } from './utils/Layout'
+import styled from 'styled-components'
+import { Action, CounterState } from '../reducer'
 
 type Props = CounterState & {
   increment: () => Action
@@ -10,8 +8,7 @@ type Props = CounterState & {
   reset: (num: number) => Action
 }
 
-// Component
-const Component = (props: Props) => {
+export const App = (props: Props) => {
   return (
     <React.Fragment>
       <Layout>
@@ -26,15 +23,8 @@ const Component = (props: Props) => {
   )
 }
 
-// Container
-const mapStateToProps = (state: CounterState) => state
-const mapDispatchToProps = (dispatch: Dispatch) => ({
-  increment: () => dispatch(increment()),
-  decrement: () => dispatch(decrement()),
-  reset: (num: number) => dispatch(reset(num)),
-})
-
-export const App = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Component)
+const Layout = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+`

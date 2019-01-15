@@ -1,6 +1,6 @@
 import React from 'react'
-import { Counter } from '../organisms/Counter'
-import { Header } from '../organisms/Header'
+import { Counter } from '../../containers/Counter'
+import { Header } from '../../containers/Header'
 
 export const App = () => (
   <React.Fragment>
