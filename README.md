@@ -24,6 +24,8 @@ Learn React with TypeScript
   - State(useReducer)
 - React + Redux
   - [Base](https://github.com/locol23/learn-react-ts/tree/master/packages/redux-base)
+  - [Goal Step1](https://github.com/locol23/learn-react-ts/tree/master/packages/redux-goal-step1)
+  - [Goal Step2](https://github.com/locol23/learn-react-ts/tree/master/packages/redux-goal-step2)
 
 ## Prerequisites
 
