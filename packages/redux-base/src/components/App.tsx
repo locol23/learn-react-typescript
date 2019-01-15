@@ -2,7 +2,7 @@ import React from 'react'
 import { connect, Provider } from 'react-redux'
 import { Dispatch } from 'redux'
 import { createStore } from 'redux'
-import { Layout } from './utils/Layout'
+import styled from 'styled-components'
 
 // Actions
 const INCREMENT = 'counter/increment'
@@ -16,7 +16,7 @@ const reset = (num: number) => ({
 })
 type Action = ReturnType<typeof increment | typeof reset>
 
-// Reducers
+// Reducer
 export type CounterState = typeof initialCounterState
 const initialCounterState = {
   count: 0,
@@ -80,3 +80,9 @@ export const App = () => (
     <AppComponent />
   </Provider>
 )
+
+const Layout = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+`
