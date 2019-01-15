@@ -1,9 +1,9 @@
 import React from 'react'
-import { HeaderAction, HeaderState } from '../../../reducer'
-import { Layout } from '../../utils/Layout'
+import { Action, HeaderState } from '../../reducers/header'
+import { Layout } from '../utils/Layout'
 
 type Props = HeaderState & {
-  updateText: (str: string) => HeaderAction
+  updateText: (str: string) => Action
 }
 
 export const Header = (props: Props) => (

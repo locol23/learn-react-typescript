@@ -1,12 +1,11 @@
-// Actions
 const INCREMENT = 'counter/increment'
 const DECREMENT = 'counter/decrement'
 const RESET = 'counter/reset'
 
-// Action Creators
 export type Action = ReturnType<
   typeof increment | typeof decrement | typeof reset
 >
+
 export const increment = () => ({ type: INCREMENT as typeof INCREMENT })
 export const decrement = () => ({ type: DECREMENT as typeof DECREMENT })
 export const reset = (num: number) => ({
@@ -14,13 +13,14 @@ export const reset = (num: number) => ({
   payload: num,
 })
 
-// Reducer
-export type CounterState = typeof initialCounterState
-const initialCounterState = {
+export type CounterState = typeof initialState
+
+const initialState = {
   count: 0,
   defaultCount: 0,
 }
-export const reducer = (state = initialCounterState, action: Action) => {
+
+export const reducer = (state = initialState, action: Action) => {
   switch (action.type) {
     case INCREMENT: {
       return { ...state, count: state.count + 1 }
