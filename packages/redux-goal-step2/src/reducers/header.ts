@@ -1,7 +1,7 @@
-const UPDATE_TEXT = 'setting/update-text'
+const UPDATE_TEXT = 'setting/update-text' as const
 
 export const updateText = (str: string) => ({
-  type: UPDATE_TEXT as typeof UPDATE_TEXT,
+  type: UPDATE_TEXT,
   payload: str,
 })
 

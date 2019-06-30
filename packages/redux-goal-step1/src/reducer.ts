@@ -1,16 +1,14 @@
 // Actions
-const INCREMENT = 'counter/increment'
-const DECREMENT = 'counter/decrement'
-const RESET = 'counter/reset'
+const INCREMENT = 'counter/increment' as const
+const DECREMENT = 'counter/decrement' as const
+const RESET = 'counter/reset' as const
 
 // Action Creators
-export type Action = ReturnType<
-  typeof increment | typeof decrement | typeof reset
->
-export const increment = () => ({ type: INCREMENT as typeof INCREMENT })
-export const decrement = () => ({ type: DECREMENT as typeof DECREMENT })
+export type Action = ReturnType<typeof increment | typeof decrement | typeof reset>
+export const increment = () => ({ type: INCREMENT })
+export const decrement = () => ({ type: DECREMENT })
 export const reset = (num: number) => ({
-  type: RESET as typeof RESET,
+  type: RESET,
   payload: num,
 })
 
