@@ -5,13 +5,13 @@ import { createStore } from 'redux'
 import styled from 'styled-components'
 
 // Actions
-const INCREMENT = 'counter/increment'
-const RESET = 'counter/reset'
+const INCREMENT = 'counter/increment' as const
+const RESET = 'counter/reset' as const
 
 // Action Creators
-const increment = () => ({ type: INCREMENT as typeof INCREMENT })
+const increment = () => ({ type: INCREMENT })
 const reset = (num: number) => ({
-  type: RESET as typeof RESET,
+  type: RESET,
   payload: num,
 })
 type Action = ReturnType<typeof increment | typeof reset>
