@@ -10,22 +10,22 @@ Learn React with TypeScript
 
 # Table of Contents
 - Function Components
-  - [Base](https://github.com/locol23/learn-react-ts/tree/master/packages/function-components-base)
-  - [Goal](https://github.com/locol23/learn-react-ts/tree/master/packages/function-components-goal)
+  - [Base](https://github.com/locol23/learn-react-typescript/tree/master/packages/function-components-base)
+  - [Goal](https://github.com/locol23/learn-react-typescript/tree/master/packages/function-components-goal)
 - Styled Components
-    - [Base & Goal](https://github.com/locol23/learn-react-ts/tree/master/packages/styled-components)
+    - [Base & Goal](https://github.com/locol23/learn-react-typescript/tree/master/packages/styled-components)
 - Recompose
   - State(withStateHandlers)
-    - [Base](https://github.com/locol23/learn-react-ts/tree/master/packages/recompose-state-base)
+    - [Base](https://github.com/locol23/learn-react-typescript/tree/master/packages/recompose-state-base)
 - React Hooks
   - State(useState)
-    - [Base](https://github.com/locol23/learn-react-ts/tree/master/packages/hooks-state-base)
-    - [Goal](https://github.com/locol23/learn-react-ts/tree/master/packages/hooks-state-goal)
+    - [Base](https://github.com/locol23/learn-react-typescript/tree/master/packages/hooks-state-base)
+    - [Goal](https://github.com/locol23/learn-react-typescript/tree/master/packages/hooks-state-goal)
   - State(useReducer)
 - React + Redux
-  - [Base](https://github.com/locol23/learn-react-ts/tree/master/packages/redux-base)
-  - [Goal Step1](https://github.com/locol23/learn-react-ts/tree/master/packages/redux-goal-step1)
-  - [Goal Step2](https://github.com/locol23/learn-react-ts/tree/master/packages/redux-goal-step2)
+  - [Base](https://github.com/locol23/learn-react-typescript/tree/master/packages/redux-base)
+  - [Goal Step1](https://github.com/locol23/learn-react-typescript/tree/master/packages/redux-goal-step1)
+  - [Goal Step2](https://github.com/locol23/learn-react-typescript/tree/master/packages/redux-goal-step2)
 
 ## Prerequisites
 
@@ -34,8 +34,8 @@ Learn React with TypeScript
 ## Getting Started
 
 ```bash
-git clone --depth=1 https://github.com/locol23/learn-react-ts.git
-cd learn-react-ts
+git clone --depth=1 https://github.com/locol23/learn-react-typescript.git
+cd learn-react-typescript
 npm i
 cd packages/<your_select_dir>
 npm run dev
