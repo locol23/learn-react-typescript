@@ -2,7 +2,7 @@
   "name": "learn-react-ts",
   "private": true,
   "scripts": {
-    "bootstrap": "lerna bootstrap"
+    "bootstrap": "lerna bootstrap --hoist"
   },
   "devDependencies": {
     "lerna": "^3.5.0"
