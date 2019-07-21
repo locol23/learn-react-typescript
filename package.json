@@ -1,5 +1,5 @@
 {
-  "name": "learn-react-ts",
+  "name": "learn-react-typescript",
   "private": true,
   "scripts": {
     "postinstall": "lerna bootstrap --hoist"
