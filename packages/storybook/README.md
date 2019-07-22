@@ -1,5 +1,17 @@
 # Storybook
 
-This repository is Storybook example for React + TypeScript.
+This repository is [Storybook](https://storybook.js.org/) example for React + TypeScript.
 
-[Storybook](https://storybook.js.org/)
+## Getting Started
+
+### development
+
+```bash
+npm run dev
+```
+
+### storybook
+
+```bash
+npm run storybook
+```
