@@ -22,6 +22,8 @@ Learn React with TypeScript
   - [Base](https://github.com/locol23/learn-react-typescript/tree/master/packages/redux-base)
   - [Goal Step1](https://github.com/locol23/learn-react-typescript/tree/master/packages/redux-goal-step1)
   - [Goal Step2](https://github.com/locol23/learn-react-typescript/tree/master/packages/redux-goal-step2)
+- Storybook
+  - [Storybook Example](https://github.com/locol23/learn-react-typescript/tree/master/packages/storybook)
 
 ## Prerequisites
 
