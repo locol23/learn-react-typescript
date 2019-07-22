@@ -1,0 +1,47 @@
+{
+  "name": "storybook",
+  "main": "index.js",
+  "repository": "https://github.com/locol23/learn-react-ts.git",
+  "scripts": {
+    "clean": "rimraf dist",
+    "parcel": "parcel src/index.html",
+    "lint": "eslint src/**/*.tsx",
+    "lint-watch": "chokidar src/**/*.ts{,x} -c 'npm run lint'",
+    "dev": "run-s clean lint && run-p lint-watch parcel",
+    "build": "run-s clean lint && parcel build src/index.html",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "version": "1.0.0",
+  "description": "## Class Components",
+  "keywords": [],
+  "author": "Yoshitaka Terazawa",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "ress": "^1.2.2",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addon-viewport": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "@types/jest": "^24.0.15",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "@types/storybook__react": "^4.0.2",
+    "@types/styled-components": "^4.1.18",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "chokidar-cli": "^1.2.2",
+    "eslint": "^6.1.0",
+    "eslint-config-everywhere": "^0.4.0",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.3",
+    "rimraf": "^2.6.3",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3"
+  }
+}
