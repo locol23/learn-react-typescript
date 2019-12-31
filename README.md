@@ -14,9 +14,11 @@ Learn React with TypeScript
   - State(withStateHandlers)
     - [Base](https://github.com/locol23/learn-react-typescript/tree/master/packages/recompose-state-base)
 - React Hooks
-  - State(useState)
+  - Counter(useState, useEffect, useCallback)
     - [Base](https://github.com/locol23/learn-react-typescript/tree/master/packages/hooks-state-base)
     - [Goal](https://github.com/locol23/learn-react-typescript/tree/master/packages/hooks-state-goal)
+  - useEffect
+    - [Base](./packages/hooks-use-effect-base)
   - State(useReducer)
 - React + Redux
   - [Base](https://github.com/locol23/learn-react-typescript/tree/master/packages/redux-base)
