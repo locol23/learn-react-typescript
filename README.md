@@ -11,7 +11,8 @@ Learn React with TypeScript
 - Styled Components
     - [Base & Goal](https://github.com/locol23/learn-react-typescript/tree/master/packages/styled-components)
 - Advanced Techniques
-  - [Base](./packages/render-props-base)
+  - render props
+    - [Base](./packages/render-props-base)
 - Recompose
   - State(withStateHandlers)
     - [Base](https://github.com/locol23/learn-react-typescript/tree/master/packages/recompose-state-base)
