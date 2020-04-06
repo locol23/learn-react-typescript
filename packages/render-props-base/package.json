@@ -1,0 +1,28 @@
+{
+  "name": "render-props-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "parcel:dev": "parcel src/index.html",
+    "parcel:prod": "parcel build src/index.html",
+    "dev": "run-s clean parcel:dev",
+    "build": "run-s clean parcel:prod",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [],
+  "author": "Yoshitaka Terazawa <locol6622@gmail.com> (https://twitter.com/locol23)",
+  "license": "MIT",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
