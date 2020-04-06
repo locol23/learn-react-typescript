@@ -2,6 +2,7 @@
   "name": "learn-react-typescript",
   "private": true,
   "scripts": {
+    "clean": "lerna clean -y",
     "postinstall": "lerna bootstrap --hoist"
   },
   "devDependencies": {
