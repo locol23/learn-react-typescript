@@ -1,0 +1,4 @@
+{
+  "presets": ["react", ["env", {"targets": {"chorme": 67} }]],
+  "plugins": ["transform-object-rest-spread", "transform-class-properties"]
+}
