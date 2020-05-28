@@ -22,6 +22,7 @@ Learn React with TypeScript
     - [Goal](https://github.com/locol23/learn-react-typescript/tree/master/packages/hooks-state-goal)
   - useEffect
     - [Base](./packages/hooks-use-effect-base)
+    - [Goal](./packages/hooks-use-effect-goal)
   - useContext
     - [Base](./packages/hooks-use-context-base)
   - State(useReducer)
