@@ -34,9 +34,7 @@ export const App = () => (
     <Header />
     <Layout>
       <Button onClick={() => alert('Button')}>Nomal Button</Button>
-      <StyledButton onClick={() => alert('Styled Button')}>
-        Styled Button
-      </StyledButton>
+      <StyledButton onClick={() => alert('Styled Button')}>Styled Button</StyledButton>
       <StyledButton styleType={'long'} as={CustomButton}>
         Custome Button
       </StyledButton>
@@ -68,6 +66,5 @@ const StyledButton = styled(Button)`
   color: ${Color.SECONDARY};
   border: solid 1px ${Color.SECONDARY};
   border-radius: 5px;
-  ${(props: StyleButtonProps) =>
-    props.styleType ? styleMap[props.styleType]() : styleMap.default()}
+  ${(props: StyleButtonProps) => (props.styleType ? styleMap[props.styleType]() : styleMap.default())}
 `

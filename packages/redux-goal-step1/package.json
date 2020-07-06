@@ -5,42 +5,10 @@
   "repository": "https://github.com/locol23/learn-react-ts.git",
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf dist .cache",
     "parcel:dev": "parcel src/index.html",
     "parcel:prod": "parcel build src/index.html",
     "dev": "run-s clean parcel:dev",
     "build": "run-s clean parcel:prod"
-  },
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.1.0",
-    "recompose": "^0.30.0",
-    "redux": "^4.0.4",
-    "ress": "^1.2.2",
-    "styled-components": "^4.3.2"
-  },
-  "devDependencies": {
-    "@storybook/addon-knobs": "^5.1.9",
-    "@storybook/addon-viewport": "^5.1.9",
-    "@storybook/addons": "^5.1.9",
-    "@storybook/react": "^5.1.9",
-    "@types/jest": "^24.0.15",
-    "@types/react": "^16.8.23",
-    "@types/react-dom": "^16.8.5",
-    "@types/styled-components": "^4.1.18",
-    "babel-core": "^6.26.3",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "chokidar-cli": "^1.2.2",
-    "jest": "^24.8.0",
-    "npm-run-all": "^4.1.5",
-    "parcel-bundler": "^1.12.3",
-    "rimraf": "^2.6.3",
-    "ts-jest": "^24.0.2",
-    "ts-loader": "^6.0.4",
-    "typescript": "^3.5.3"
   }
 }

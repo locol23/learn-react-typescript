@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "ES2015",
-    "allowJs": true,
+    "allowJs": false,
     "jsx": "react",
     "sourceMap": true,
     "noImplicitAny": true,
@@ -14,10 +14,7 @@
     "allowSyntheticDefaultImports": true,
     "strictPropertyInitialization": true,
     "rootDir": "src",
-    "outDir": "./dist/",
+    "outDir": "./dist/"
   },
-  "exclude": [
-    "dist",
-    "node_modules"
-  ]
+  "exclude": ["dist", "node_modules"]
 }

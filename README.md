@@ -35,15 +35,16 @@ Learn React with TypeScript
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
 
 ## Getting Started
 
 ```bash
 git clone --depth=1 https://github.com/locol23/learn-react-typescript.git
 cd learn-react-typescript
-npm i
-cd packages/<your_select_dir>
-npm run dev
+yarn
+cd packages/<directory_of_you_want_to_learn_content>
+yarn dev
 ```
 
 Go to [http://localhost:1234](http://localhost:1234)

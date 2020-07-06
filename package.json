@@ -1,11 +1,51 @@
 {
   "name": "learn-react-typescript",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "description": "Learn React with TypeScript",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/locol23/learn-react-typescript.git"
+  },
+  "author": "Yoshitaka Terazawa <locol6622@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/locol23/learn-react-typescript/issues"
+  },
+  "homepage": "https://github.com/locol23/learn-react-typescript#readme",
   "scripts": {
-    "clean": "lerna clean -y",
-    "postinstall": "lerna bootstrap --hoist"
+    "build": "yarn workspaces run build && yarn workspace storybook run build-storybook"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "ress": "^2.0.4",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
-    "lerna": "^3.5.0"
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/addon-viewport": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
+    "@types/redux": "^3.6.0",
+    "@types/styled-components": "^5.1.0",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.6"
   }
 }
