@@ -13,9 +13,6 @@ Learn React with TypeScript
 - Advanced Techniques
   - render props
     - [Base](./packages/render-props-base)
-- Recompose
-  - State(withStateHandlers)
-    - [Base](https://github.com/locol23/learn-react-typescript/tree/master/packages/recompose-state-base)
 - React Hooks
   - useState
     - [Base](./packages/hooks-use-state-base)
