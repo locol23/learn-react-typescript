@@ -20,8 +20,8 @@ Learn React with TypeScript
     - [Base](./packages/hooks-use-context-base)
   - State(useReducer)
   - Counter(useState, useEffect, useCallback)
-    - [Base](./packages/hooks-state-base)
-    - [Goal](./packages/hooks-state-goal)
+    - [Base](./packages/counter-base)
+    - [Goal](./packages/counter-goal)
 - React + Redux
   - [Base](./packages/redux-base)
   - [Goal Step1](./packages/redux-goal-step1)
