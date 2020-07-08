@@ -8,10 +8,10 @@ const Foo = React.memo(({ str }: FooProps) => {
   return <div>{str}</div>
 })
 
-type BaaProps = {
+type BarProps = {
   str: string
 }
-const Baa = React.memo(({ str }: BaaProps) => {
+const Bar = React.memo(({ str }: BarProps) => {
   console.log('render fuga')
   return <div>{str}</div>
 })
@@ -23,17 +23,17 @@ const Button = React.memo(({ handler }: { handler: () => void }) => {
 
 export const App = () => {
   const [strFoo, setFooStr] = useState('Init')
-  const [strBaa, setBaaStr] = useState('Init')
+  const [strBar, setBarStr] = useState('Init')
 
   const handler = useCallback(() => {
     setFooStr('Init')
-    setBaaStr('Str')
+    setBarStr('Str')
   }, [])
 
   return (
     <>
       <Foo str={strFoo} />
-      <Baa str={strBaa} />
+      <Bar str={strBar} />
       <Button handler={handler} />
     </>
   )
