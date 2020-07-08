@@ -53,11 +53,11 @@ Go to [http://localhost:1234](http://localhost:1234)
 
 - [React](https://reactjs.org/)
 - [React Hooks](https://reactjs.org/docs/hooks-overview.html)
-- [Recompose](https://github.com/acdlite/recompose)
+- [Redux](https://redux.js.org/)
+- [Storybook](https://storybook.js.org/)
 - [Parcel](https://parceljs.org/)
 - [Prittier](https://prettier.io/)
-- [TSLint](https://palantir.github.io/tslint/)
-- [Lerna](https://lernajs.io/)
+- [Yarn](https://yarnpkg.com/)
 
 ## LICENSE
 
