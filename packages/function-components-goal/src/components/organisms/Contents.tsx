@@ -1,8 +1,9 @@
 import React from 'react'
-import { ContentsProps } from '../../types'
-import { Button } from '../atoms/Button'
-import { Footer } from '../molcules/Footer'
-import { Header } from '../molcules/Header'
+import { Button, ButtonProps } from '../atoms/Button'
+import { Header, HeaderProps } from '../molcules/Header'
+import { Footer, FooterProps } from '../molcules/Footer'
+
+type ContentsProps = ButtonProps & HeaderProps & FooterProps
 
 export const Contents = (props: ContentsProps) => (
   <div>

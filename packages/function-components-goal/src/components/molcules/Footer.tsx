@@ -1,4 +1,7 @@
 import React from 'react'
-import { FooterProps } from '../../types'
 
-export const Footer = (props: FooterProps) => <footer>{props.text}</footer>
+export type FooterProps = {
+  text: string
+}
+
+export const Footer: React.FC<FooterProps> = (props) => <footer>{props.text}</footer>
