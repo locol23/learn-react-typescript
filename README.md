@@ -6,10 +6,10 @@ Learn React with TypeScript
 
 # Table of Contents
 - Function Components
-  - [Base](https://github.com/locol23/learn-react-typescript/tree/master/packages/function-components-base)
-  - [Goal](https://github.com/locol23/learn-react-typescript/tree/master/packages/function-components-goal)
+  - [Base](./packages/function-components-base)
+  - [Goal](./packages/function-components-goal)
 - Styled Components
-    - [Base & Goal](https://github.com/locol23/learn-react-typescript/tree/master/packages/styled-components)
+    - [Base & Goal](./packages/styled-components)
 - React Hooks
   - useState
     - [Base](./packages/hooks-use-state-base)
@@ -20,17 +20,17 @@ Learn React with TypeScript
     - [Base](./packages/hooks-use-context-base)
   - State(useReducer)
   - Counter(useState, useEffect, useCallback)
-    - [Base](https://github.com/locol23/learn-react-typescript/tree/master/packages/hooks-state-base)
-    - [Goal](https://github.com/locol23/learn-react-typescript/tree/master/packages/hooks-state-goal)
+    - [Base](./packages/hooks-state-base)
+    - [Goal](./packages/hooks-state-goal)
 - React + Redux
-  - [Base](https://github.com/locol23/learn-react-typescript/tree/master/packages/redux-base)
-  - [Goal Step1](https://github.com/locol23/learn-react-typescript/tree/master/packages/redux-goal-step1)
-  - [Goal Step2](https://github.com/locol23/learn-react-typescript/tree/master/packages/redux-goal-step2)
+  - [Base](./packages/redux-base)
+  - [Goal Step1](./packages/redux-goal-step1)
+  - [Goal Step2](./packages/redux-goal-step2)
 - Advanced Techniques
   - render props
     - [Base](./packages/render-props-base)
 - Storybook
-  - [Storybook Example](https://github.com/locol23/learn-react-typescript/tree/master/packages/storybook)
+  - [Storybook Example](./packages/storybook)
 
 ## Prerequisites
 
