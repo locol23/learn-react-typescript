@@ -6,7 +6,7 @@
 class APP extends React.Component {
   render() {
     return (
-      <div>Function Components</div>
+      <div>Class Components</div>
     )
   }
 }
