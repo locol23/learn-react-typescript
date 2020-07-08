@@ -1,4 +1,4 @@
-# hooks-state-base
+# counter-goal
 
 [Hooks API Reference](https://reactjs.org/docs/hooks-reference.html)
 
