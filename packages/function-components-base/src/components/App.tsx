@@ -1,3 +1,4 @@
 import React from 'react'
 
-export const App = () => <h1>Function Components</h1>
+export const App: React.FC = () => <h1>Function Components</h1>
+
