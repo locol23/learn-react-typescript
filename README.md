@@ -10,9 +10,6 @@ Learn React with TypeScript
   - [Goal](https://github.com/locol23/learn-react-typescript/tree/master/packages/function-components-goal)
 - Styled Components
     - [Base & Goal](https://github.com/locol23/learn-react-typescript/tree/master/packages/styled-components)
-- Advanced Techniques
-  - render props
-    - [Base](./packages/render-props-base)
 - React Hooks
   - useState
     - [Base](./packages/hooks-use-state-base)
@@ -29,6 +26,9 @@ Learn React with TypeScript
   - [Base](https://github.com/locol23/learn-react-typescript/tree/master/packages/redux-base)
   - [Goal Step1](https://github.com/locol23/learn-react-typescript/tree/master/packages/redux-goal-step1)
   - [Goal Step2](https://github.com/locol23/learn-react-typescript/tree/master/packages/redux-goal-step2)
+- Advanced Techniques
+  - render props
+    - [Base](./packages/render-props-base)
 - Storybook
   - [Storybook Example](https://github.com/locol23/learn-react-typescript/tree/master/packages/storybook)
 
