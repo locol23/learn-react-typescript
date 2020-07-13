@@ -5,10 +5,10 @@ import { Footer, FooterProps } from '../molcules/Footer'
 
 type ContentsProps = ButtonProps & HeaderProps & FooterProps
 
-export const Contents = (props: ContentsProps) => (
+export const Contents: React.FC<ContentsProps> = ({ title, handler, value, text }) => (
   <div>
-    <Header title={props.title} />
-    <Button handler={props.handler} value={props.value} />
-    <Footer text={props.text} />
+    <Header title={title} />
+    <Button handler={handler} value={value} />
+    <Footer text={text} />
   </div>
 )
