@@ -1,49 +1,31 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Color } from '../const'
+import { color } from '../styles'
+import { Header } from './Header'
 
-interface LayoutProps {
-  children: React.ReactNode
-}
+const CustomButton: React.FC = ({ children }) => <button onClick={() => alert('CustomButton')}>{children}</button>
 
-const Layout = (props: LayoutProps) => <Container>{props.children}</Container>
-
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-`
-
-const Header = () => (
-  <Layout>
-    <h1>Styled Components</h1>
-  </Layout>
-)
-
-interface CustomButtonProps {
-  children: React.ReactNode
-}
-
-const CustomButton = (props: CustomButtonProps) => (
-  <button onClick={() => alert('CustomButton')} {...props}>
-    {props.children}
-  </button>
-)
-
-export const App = () => (
-  <React.Fragment>
+export const App: React.FC = () => (
+  <>
     <Header />
-    <Layout>
+    <Container>
       <Button onClick={() => alert('Button')}>Nomal Button</Button>
       <StyledButton onClick={() => alert('Styled Button')}>Styled Button</StyledButton>
       <StyledButton styleType={'long'} as={CustomButton}>
         Custome Button
       </StyledButton>
-    </Layout>
-  </React.Fragment>
+    </Container>
+  </>
 )
 
+// Style Objects
+const Container = styled.div({
+  display: 'flex',
+  justifyContent: 'center',
+})
+
 const Button = styled.button`
-  border: solid 1px ${Color.PRIMARY};
+  border: solid 1px ${color.primary};
   width: 100px;
   height: 30px;
   margin: 0 20px;
@@ -63,8 +45,19 @@ type StyleButtonProps = {
 }
 
 const StyledButton = styled(Button)`
-  color: ${Color.SECONDARY};
-  border: solid 1px ${Color.SECONDARY};
+  color: ${color.secondary};
+  border: solid 1px ${color.secondary};
   border-radius: 5px;
   ${(props: StyleButtonProps) => (props.styleType ? styleMap[props.styleType]() : styleMap.default())}
 `
+
+// Style Objects
+const StyleObjectsStyledButton = styled(Button)<StyleButtonProps>(
+  {
+    color: color.secondary,
+    border: `solid 1px ${color.secondary}`,
+    borderRadius: 5,
+  },
+  (props) => (props.styleType ? styleMap[props.styleType]() : styleMap.default())
+)
+
