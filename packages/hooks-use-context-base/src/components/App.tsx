@@ -1,13 +1,13 @@
 import React from 'react'
 import { Context } from './context'
-import { Baa } from './Baa'
+import { Bar } from './Bar'
 
 export const App = () => {
   const value = { text: 'foo' }
 
   return (
     <Context.Provider value={value}>
-      <Baa />
+      <Bar />
     </Context.Provider>
   )
 }
