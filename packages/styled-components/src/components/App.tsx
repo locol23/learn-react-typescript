@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { color } from '../styles'
 import { Header } from './Header'
+import { Button } from './Button'
 
 const CustomButton: React.FC = ({ children }) => <button onClick={() => alert('CustomButton')}>{children}</button>
 
@@ -23,13 +24,6 @@ const Container = styled.div({
   display: 'flex',
   justifyContent: 'center',
 })
-
-const Button = styled.button`
-  border: solid 1px ${color.primary};
-  width: 100px;
-  height: 30px;
-  margin: 0 20px;
-`
 
 type StyleMap = {
   [key: string]: () => string
@@ -60,4 +54,3 @@ const StyleObjectsStyledButton = styled(Button)<StyleButtonProps>(
   },
   (props) => (props.styleType ? styleMap[props.styleType]() : styleMap.default())
 )
-
