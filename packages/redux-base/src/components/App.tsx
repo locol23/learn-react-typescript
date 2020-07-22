@@ -1,6 +1,5 @@
 import React from 'react'
-import { connect, Provider } from 'react-redux'
-import { Dispatch } from 'redux'
+import { useDispatch, useSelector, Provider } from 'react-redux'
 import { createStore } from 'redux'
 import styled from 'styled-components'
 
@@ -14,6 +13,7 @@ const reset = (num: number) => ({
   type: RESET,
   payload: num,
 })
+
 type Action = ReturnType<typeof increment | typeof reset>
 
 // Reducer
@@ -22,6 +22,7 @@ const initialCounterState = {
   count: 0,
   defaultCount: 0,
 }
+
 export const reducer = (state = initialCounterState, action: Action) => {
   switch (action.type) {
     case INCREMENT: {
@@ -40,8 +41,7 @@ export const reducer = (state = initialCounterState, action: Action) => {
 // Store
 export const store = createStore(
   reducer,
-  (window as any).__REDUX_DEVTOOLS_EXTENSION__ &&
-    (window as any).__REDUX_DEVTOOLS_EXTENSION__()
+  (window as any).__REDUX_DEVTOOLS_EXTENSION__ && (window as any).__REDUX_DEVTOOLS_EXTENSION__()
 )
 
 // Component
@@ -49,7 +49,8 @@ type Props = CounterState & {
   increment: () => Action
   reset: (num: number) => Action
 }
-const Component = (props: Props) => {
+
+const Counter = (props: Props) => {
   return (
     <React.Fragment>
       <Layout>
@@ -62,6 +63,7 @@ const Component = (props: Props) => {
     </React.Fragment>
   )
 }
+
 const Layout = styled.div`
   display: flex;
   justify-content: center;
@@ -69,19 +71,21 @@ const Layout = styled.div`
 `
 
 // Container
-const mapStateToProps = (state: CounterState) => state
-const mapDispatchToProps = (dispatch: Dispatch) => ({
-  increment: () => dispatch(increment()),
-  reset: (num: number) => dispatch(reset(num)),
-})
-const AppComponent = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Component)
+const counterSelector = (state: CounterState) => state
+
+const CounterContainer = () => {
+  const { count } = useSelector(counterSelector)
+  const dispatch = useDispatch()
+
+  const inc = () => dispatch(increment())
+  const res = (num: number) => dispatch(reset(num))
+
+  return <Counter defaultCount={0} count={count} increment={inc} reset={res} />
+}
 
 // connect Store
 export const App = () => (
   <Provider store={store}>
-    <AppComponent />
+    <CounterContainer />
   </Provider>
 )
