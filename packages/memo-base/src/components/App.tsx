@@ -3,16 +3,18 @@ import React, { useState, useCallback } from 'react'
 type FooProps = {
   str: string
 }
+
 const Foo = React.memo(({ str }: FooProps) => {
-  console.log('render hoge')
+  console.log('render Foo')
   return <div>{str}</div>
 })
 
 type BarProps = {
   str: string
 }
+
 const Bar = React.memo(({ str }: BarProps) => {
-  console.log('render fuga')
+  console.log('render Bar')
   return <div>{str}</div>
 })
 
@@ -29,6 +31,9 @@ export const App = () => {
     setFooStr('Init')
     setBarStr('Str')
   }, [])
+
+  // const memoHandler = useMemo(() => handler, [])
+  // const memoCallbackHandler = useCallback(handler, [])
 
   return (
     <>

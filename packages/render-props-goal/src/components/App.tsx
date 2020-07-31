@@ -1,10 +1,10 @@
 import React, { ReactNode } from 'react'
 import { Child } from './Child'
 
-const NLink: React.FC = ({ children }) => <div>{children}</div>
+const Link: React.FC = ({ children }) => <a>{children}</a>
 
 export const App: React.FC = () => {
-  const render = (component: ReactNode) => <NLink>{component}</NLink>
+  const render = (component: ReactNode) => <Link>{component}</Link>
 
   return (
     <>

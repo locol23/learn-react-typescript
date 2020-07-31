@@ -5,16 +5,16 @@ type Props = {
   render?: (component: ReactNode) => ReactNode
 }
 
-const Hoge = () => <div>hoge</div>
+const Foo = () => <div>foo</div>
 
 export const Child: React.FC<Props> = ({ render, linkUrl }) => {
   return (
     <>
       {render ? (
-        render(<Hoge />)
+        render(<Foo />)
       ) : (
         <a href={linkUrl}>
-          <Hoge />
+          <Foo />
         </a>
       )}
     </>
